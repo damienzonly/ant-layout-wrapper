@@ -1,0 +1,29 @@
+{
+    "name": "ant-layout-wrapper",
+    "version": "1.0.0",
+    "main": "dist/Layout.js",
+    "types": "dist/Layout.d.ts",
+    "repository": "https://github.com/damienzonly/ant-layout-wrapper",
+    "author": "damienzonly <damianomailswork@gmail.com>",
+    "license": "MIT",
+    "scripts": {
+        "format": "prettier --write src/*",
+        "build": "tsc",
+        "precommit": "yarn format && yarn build",
+        "clean": "rm -rf node_modules dist"
+    },
+    "devDependencies": {
+        "@types/react": "^16.9.34",
+        "prettier": "1.19.1",
+        "typescript": "3.8.2"
+    },
+    "files": [
+        "README.md",
+        "dist/*",
+        "package.json"
+    ],
+    "dependencies": {
+        "antd": "^4.2.0",
+        "react": "^16.13.1"
+    }
+}
