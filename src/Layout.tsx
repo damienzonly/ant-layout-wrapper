@@ -3,7 +3,7 @@ import { Layout as AntLayout } from "antd";
 
 const { Sider, Footer, Content } = AntLayout;
 
-interface ILayoutProps {
+export interface ILayoutProps {
     rootLayoutProps?: any;
     innerLayoutProps?: any;
 
@@ -66,8 +66,7 @@ export default class Layout extends React.Component<ILayoutProps> {
         const opts = { style, ...this.props.contenWrappertProps };
         return (
             <Content {...opts}>
-                {" "}
-                <ContentComponent {...this.props.contentProps} />{" "}
+                <ContentComponent {...this.props.contentProps} />
             </Content>
         );
     };
